@@ -8,6 +8,8 @@ public class IndexController {
     }
 
     public String oopsHandler(){
-        return "not implemented";
+        throw new ValueNotFoundException();
+//        return "";
     }
+
 }

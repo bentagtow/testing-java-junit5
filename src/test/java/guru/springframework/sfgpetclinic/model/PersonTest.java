@@ -15,8 +15,8 @@ class PersonTest {
 
         //then
         assertAll("Test Props Set",
-                () -> assertEquals(person.getFirstName(), "Joe"),
-                () -> assertEquals(person.getLastName(), "Buck")
+                () -> assertEquals( "Joe", person.getFirstName()),
+                () -> assertEquals("Buck", person.getLastName())
         );
 
     }
@@ -29,8 +29,8 @@ class PersonTest {
 
         //then
         assertAll("Test Props Set",
-                () -> assertEquals(person.getFirstName(), "Joe2", "First name failed"),
-                () -> assertEquals(person.getLastName(), "Buck2", "last name failed")
+                () -> assertEquals("Joe", person.getFirstName(), "First name failed"),
+                () -> assertEquals("Buck", person.getLastName(), "last name failed")
         );
 
     }
